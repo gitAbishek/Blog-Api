@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.App{
+    width:90%;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.748);
+}
+
+.blog{
+    width:90%;
+    margin: auto;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    color: rgb(144, 40, 40);
+}
+
+.navbar a{
+    font-size: 1.5rem;
+}
+
+.navbar p{
+    font-size: 2rem;
+}
+
+.blog .title{
+    text-align: center;
+    margin:2rem 0rem;
+    font-size: 2rem;
+    color: brown;
+}
+
+.blog .blog_element{
+    width: 50%;
+    height: 15rem;
+    background-color: rgb(240, 233, 234);
+    padding: 1rem;
+    cursor: pointer;
+    margin: 0rem 0rem 2rem 0rem;
+    border-radius: 0.2rem;
+}
+
+.blog .blog_element:hover{
+    background-color: rgb(26, 24, 24);
+    color:rgb(227, 207, 210);
+    transition: 0.4s;
+}
+
+.blog .new_blog_elements{
+    width: 50%;
+    height: fit-content;
+    padding: 2rem;
+    cursor: pointer;
+    margin: 2rem 0rem;
+
+}
+
+.blog .new_blog_elements .p{
+    width:fit-content;
+    font-size: 1.3rem;
+    color: gainsboro;
+}
+
+
+
+
+
+
+/* =====================MEDIA QUERRIES (MEDIUM SIZEs) TABLETS=========================== */
+
+@media screen and (max-width:1024px) {
+    .blog .blog_element{
+        width: 80%;
+        background-color: black;
+        color: white;
+    }
+
+    .blog{
+        margin-top: 1rem;
+    }
+
+    .App{
+        width:100%;
+    }
+
+    .navbar{
+        margin-top: 2rem;
+        justify-content: space-between;
+        padding-left: 2rem;
+    }
+
+    .navbar .a{
+        font-size: 2rem;
+        font-weight: bold;
+        color: red;
+    }
+
+    .blog .new_blog_elements{
+        margin-top: 5rem;
+        width: 85%;    
+    }
+
+    .blog .heading{
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+/* =====================MEDIA QUERRIES (SMALL SIZEs) MOBILE=========================== */
+
+@media screen and (max-width:600px) {
+    .blog .blog_element{
+        width: 95%;
+        background-color: black;
+    }
+
+    .navbar{
+        margin-top: 1rem;
+        justify-content: space-between;
+        padding-left: 0rem;
+    }
+
+    .blog{
+        margin-top: 0rem;
+        width: 100%;
+    }
+
+    .blog .new_blog_elements{
+        margin-top: 3rem;
+        width: 100%;    
+    }
+
+    .navbar .a{
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar .b{
+        font-size: 1.5rem;
+    }
+
+
+}
